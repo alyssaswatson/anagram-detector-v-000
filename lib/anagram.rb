@@ -9,6 +9,6 @@ class Anagram
   def match(match_words)
     result = []
     word_arr = @words.split(//).sort
-    match_words.select {self.split(//).sort == word_arr}
+    match_words.select {|words| words.split(//).sort == word_arr}
   end
 end
