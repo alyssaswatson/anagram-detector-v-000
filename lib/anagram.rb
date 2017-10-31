@@ -7,7 +7,15 @@ class Anagram
   end
 
   def match(match_words)
+    result = []
     word_arr = @words.split(//).sort
-    match_words.collect {|words| words.split(//).sort == word_arr}
+    match_words.collect do |words| 
+      if words.split(//).sort == word_arr
+        result << words
+      else
+        result
+      end       
+
+    end
   end
 end
