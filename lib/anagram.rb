@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(match_words)
-    match_words.split
+    match_words
 
   end
 end
