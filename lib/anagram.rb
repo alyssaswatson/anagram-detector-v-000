@@ -14,7 +14,7 @@ class Anagram
         result << words
       else
         result
-      end   
+      end
     end
   end
 end
