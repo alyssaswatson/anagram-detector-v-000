@@ -7,7 +7,8 @@ class Anagram
   end
 
   def match(match_words)
-    match_words
-
+    match_words.collect do |word|
+      word == @words
+    end
   end
 end
