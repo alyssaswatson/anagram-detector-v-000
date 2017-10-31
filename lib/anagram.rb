@@ -1,14 +1,12 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :emails
+  attr_accessor :words
 
-  def initialize(emails)
-    @emails = emails
+  def initialize(words)
+    @words = words
   end
 
-  def parse
-    parsed_emails = emails.split(/[\s,]/)
-    parsed_emails.delete("")
-    parsed_emails.uniq
-  end  
+  def match
+
+  end
 end
